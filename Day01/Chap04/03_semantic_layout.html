@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sematic Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: black;
+            height: 80px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            float: left;
+            display: block;
+            width: 100ox;
+            height: 100%;
+            padding: 10px 20px;
+            line-height: 60px;
+            text-align: center;
+        }
+        
+        nav a:hover{
+            background-color: cornflowerblue;
+        }
+
+        section{
+            margin: 0 auto;
+            width: 1024px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 200px;
+        }
+
+        footer{
+            background-color: lightgray;
+            min-height: 80px;
+        }
+
+        footer .copy{
+            float: left;
+            line-height: 80px;
+            padding: 0px 20ox;
+        }
+
+        footer .family{
+            float: right;
+            line-height: 80px;
+            min-width: 120px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://naver.com">네이버</a>
+            <a href="http://kakao.com">카카오</a>
+            <a href="http://youtube.com">유튜브</a>
+        </nav>
+    </header>
+    <section>
+        <h1>My Page</h1>
+        <p>My Page 에 오신 걸 환영합니다~!</p>
+    </section>
+
+    <section>
+        <h1>2번째 섹션</h1>
+        <p>2번쨰 영역 입니다~!</p>
+        <article>
+            소담스러운 황금시대를 위하여 만물은 싹이 갑 수 구하지 피가 것이다. 힘차게 있으며, 어디 피어나는 끓는 공자는 있는 있는 청춘이 이것이다. 못할 아름답고 현저하게 위하여, 이것이야말로 얼음이 곳으로 그리하였는가? 불어 앞이 못할 끓는 아니한 설산에서 부패를 때문이다. 많이 하였으며, 가는 물방아 이것이다. 열매를 거선의 가치를 때까지 예가 내려온 인생을 투명하되 있으랴? 것은 생생하며, 바이며, 그들은 평화스러운 인생을 것이다. 위하여, 인생에 사람은 우는 위하여서. 두손을 봄날의 스며들어 인생에 끓는다. 이상의 커다란 산야에 희망의 청춘의 예수는 그들은 사막이다. 인생의 같이, 전인 그들의 과실이 뭇 것이다.
+        </article>
+    </section>
+
+    <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 섹션입니다.</p>
+    </section>
+
+    <footer>
+        <p class="copy">Copyright ⓒ ALOHA CLASS. All Rights Reserved</p>
+        <p class="family">
+            <select name="family">
+                <option value="1">네이버</option>
+                <option value="2">카카오</option>
+                <option value="3">유튜브</option>
+            </select>
+        </p>
+    </footer>
+</body>
+</html>
