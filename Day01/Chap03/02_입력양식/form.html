@@ -30,7 +30,7 @@
 			  				북마크 불가
 			  				뒤로가기 불가
      -->
-
+    <!-- method get 으로 보내면 주소부분에 아이디와 패스워드가 표시된다 -->
      <h1>로그인</h1>
      <form action="login" method="get">
         <label for="id">아이디</label>
@@ -43,7 +43,7 @@
      </form>
 
      <hr>
-     
+     <!-- method post 로 보내주면 주소부분에 아무것도 표시 안되게 보내준다. -->
      <form action="input" method="post">
         ID      : <input type="text" name="id"> <br>
         PW      : <input type="password" name="password"> <br>
@@ -90,7 +90,33 @@
         <br>
 
         <textarea name="content" id="content" cols="30" rows="10"></textarea>
-        
+        <br>
+        <input type="reset" value="RESET">
+        <input type="submit" value="SUBMIT">
      </form>
+     <hr>
+     <form action="option" method="post">
+        <label for="test1">필수 입력(required)</label>
+        <input type="text" name="test1" id="test1" required>    <!-- required 를 넣으면 필수로 입력을 해야 넘어갈수 있다. -->
+        <br>
+        <label for="test2">읽기 전용(readonly)</label>
+        <input type="text" name="test2" id="test2" value="읽기 전용" readonly>      <!-- readonly 와 value에 값을 넣으면 value 값만 표시되고 쓸수는 없다. -->
+        <br>
+        <label for="test3">일반 입력</label>
+        <input type="text" name="test3" id="test3" id="test3" value="기본값">
+        <br>
+        <label for="test4">사용불가</label>
+        <input type="text" name="test4" id="test4" value="(사용불가)" disabled>        <!-- disable 을 사용하면 사용이 불가능하다 -->
+        <br>
+        <label for="test5">자동 포커싱</label>
+        <input type="text" name="test5" id="test5" autofocus>       <!-- 사이트 들어가자마자마 커서가 자동으로 선택되게 하는것 -->
+        <br>
+        <label for="test6">숨김 데이터</label>
+        <input type="hidden" name="boardNo" id="test6" value="100">     <!-- type 을 hidden으로 하면 화면에는 안나오지만 value에 넣어진 값을 서버에 보내진다. -->
+        <br>
+        <input type="submit" value="등록">
+     </form>
+
+     <div style="height: 400px;"></div>
 </body>
 </html>
