@@ -19,13 +19,14 @@
 
         - caption               : 표의 제목
         - border                : 표의 테두리 굵기(px) 지정
-        
+
         - thead                 : 테이블 최상단의 영역을 지정
         - tbody                 : 테이블 몸체 영역을 지정
         - tfoot                 : 테이블 최하단의 영역을 지정
 
-        - colgroup              : 열 그룹을 지정하여 하나 이상의 열에 동일한 형식을 지정하기 위해 사용
-            -col                : 그룹화된 열을 나타내기 위해 사용
+        - colgroup              : 열 그룹을 지정하여 하나 이상의 열에 동일한 형식을
+        지정하기 위해 사용
+        - col                   : 그룹화된 열을 나타내기 위해 사용
      -->
      <table border="1">
         <tr>
@@ -58,39 +59,11 @@
      </table>
 
      <hr>
-
-     <table border="1">
-        <caption>영화관 좌석표</caption>
-        <!-- tr>(th[width="100"]*3) -->
-        <tr>
-            <th width="100">1열</th>
-            <th width="100">2열</th>
-            <th width="100">3열</th>
-        </tr>
-        <!-- (tr>(td*3))*3 -->
-        <tr>
-            <td rowspan="2">1+4</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <!-- <td>4</td> -->
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td colspan="3">7+8+9</td>
-            <!-- <td>8</td> -->
-            <!-- <td>9</td> -->
-        </tr>
-     </table>
-
-     <hr>
-     <table border="1">
+    <table border="1">
         <thead>
             <tr>
-                <th>월별</th>
-                <th>수입</th>
+                <td>월별</td>
+                <td>수입</td>
             </tr>
         </thead>
         <tbody>
@@ -100,7 +73,7 @@
             </tr>
             <tr>
                 <td>09월</td>
-                <td>1,500,00</td>
+                <td>1,500,000</td>
             </tr>
             <tr>
                 <td>10월</td>
@@ -117,19 +90,19 @@
                 <td>7,000,000</td>
             </tr>
         </tfoot>
-     </table>
+    </table>
 
-     <hr>
-     <table>
+    <hr>
+    <table>
         <colgroup>
             <col style="background-color: red;">
             <col span="6" style="background-color: blue;">
-            <!-- <col style="background-color: blue;"> -->
-            <!-- <col style="background-color: blue;"> -->
-            <!-- <col style="background-color: blue;"> -->
-            <!-- <col style="background-color: blue;"> -->
-            <!-- <col style="background-color: blue;"> -->
-            <!-- <col style="background-color: blue;"> -->
+            <!-- <col span="6" style="background-color: blue;"> -->
+            <!-- <col span="6" style="background-color: blue;"> -->
+            <!-- <col span="6" style="background-color: blue;"> -->
+            <!-- <col span="6" style="background-color: blue;"> -->
+            <!-- <col span="6" style="background-color: blue;"> -->
+            <!-- <col span="6" style="background-color: blue;"> -->
         </colgroup>
         <tr>
             <!-- th*7 -->
@@ -142,23 +115,23 @@
             <th>토</th>
         </tr>
         <tr>
-            <td style="background-color: red;">1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
+            <th style="background-color: red;">1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
         </tr>
         <tr>
-            <td style="background-color: red;">8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
+            <th style="background-color: red;">8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
         </tr>
-     </table>
+    </table>
 </body>
 </html>

@@ -1,0 +1,24 @@
+
+.container {
+    position: relative;
+    width: 1024px;      /* w1024 */
+    min-height: 500px;  /* mh500 */
+    border: 1px dashed orange;
+    margin: auto;       /* m:a */
+}
+
+.item {
+    width: 300px;       /* w300 */
+    height: 200px;      /* h200 */
+}
+
+h1 { text-align: center; }
+.inner { height: 100px; }
+
+.left { float: left; background-color: pink; }              /* float 이 있어서 .next에 있는 색상이 안보인다. */
+.right { float: right; background-color: lightblue; }       /* float 이 있어서 .next에 있는 색상이 안보인다. */
+.next { background-color: cornflowerblue; }
+
+.clear-left { clear: left; }            /* clear를 적용해서 .next 색상이 보인다. */
+.clear-right { clear: right; }          /* clear를 적용해서 .next 색상이 보인다. */
+.clear-both { clear: both; }            /* clear를 적용해서 .next 색상이 보인다. */
