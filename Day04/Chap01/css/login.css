@@ -1,0 +1,197 @@
+/* 초기화 */
+* { margin: 0; padding: 0; }
+
+body {
+    /* background-color: darkgray; */
+    background: 
+        radial-gradient(circle at 50% 0, rgba(255,0,0, 0.5), rgba(255,0,0,0) 70%),
+        radial-gradient(circle at 7% 75%, rgba(0,0,255, 0.5), rgba(255,0,0,0) 70%),
+        radial-gradient(circle at 93% 75%, rgba(0,255,0, 0.5), rgba(255,0,0,0) 70%);
+}
+
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 전체영역 */
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* 로그인 영역 */
+.login-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* inner */
+#login {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */      /* 만들때 가이드를 보려고 만들었음 */
+}
+
+/* 로고 */
+#login .login-logo {
+    height: 200px;
+    margin-top: 50px;       /* mt50 */
+    margin-bottom: 50px;    /* mb50 */
+}
+
+#login .login-logo img {
+    width: 100%;            /* 부모영역에 맞춰 가로 100%크기로 맞춘다 */
+    height: 200px;          /* 높이를 200px로 늘린다. */
+    object-fit: contain;    /* 오브젝트 핏을 컨태인에 맞춰서 넣는다? */
+}
+
+/* 아이디/비밀번호 */
+#login .login-inputbox {
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px;    /* mb10 */
+}
+
+#login .login-inputbox input {
+    width: 100%;
+    height: 32px;
+    padding-left: 5px;
+    font-size: 1rem;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+#login .login-inputbox input::placeholder {
+    color: #aaa;
+}
+
+/* 입력상자 - 밑줄 */
+#login .login-inputbox input ~ .border {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 0;           /* 0px 이였다가 */
+    border: 1px solid royalblue;
+}
+
+/* 
+    :focus
+    - input 태그에 마우스 커서가 놓인 상태를 선택
+*/
+#login .login-inputbox input:focus ~ .border {
+    width: 100%;        /* 포커스가 가면 100% 밑줄이 생긴다 */
+    border-width: 1px;
+    transition: width 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#login .login-remember {
+    height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#login .login-remember label {
+    position: relative;
+    padding-left: 25px;
+    color: #aaa;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#login .login-remember label input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: 0;
+    cursor: pointer;
+}
+
+#login .login-remember label .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+}
+
+/* ✅ 체크 표시를 가상 요소로 만들기 */
+#login .login-remember label .checkmark::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 4px;
+    height: 8px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 3px 3px 0;      /* 시계방향으로 0픽셀 3픽셀 3픽셀 0픽셀 줘서 ㅢ 모양으로 만들기 */
+    transform: rotate(45deg);
+}
+
+/* 
+    ::checked
+    - input 체크박스가 체크된 상태를 선택
+*/
+#login .login-remember label input:checked ~ .checkmark {
+    background-color: royalblue;
+}
+
+#login .login-remember label input:checked ~ span {
+    color: royalblue;
+}
+
+#login .login-remember label span {
+    user-select: none;      /* 드레그 선택 없애기 */
+}
+
+/* 버튼 */
+#login .login-btnbox {
+    height: 50px;
+    margin: 10px;
+}
+
+#login .login-btnbox .login-btn {
+    display: block;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+#login .login-btnbox .login-btn:hover {
+    filter: brightness(90%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* 카피 라이트 */
+#login .copy {
+    height: 15px;
+    margin-top: 30px;       /* mt30 */
+    margin-bottom: 10px;    /* mb10 */
+}
+
+#login .copy p {
+    font-size: 0.7rem;
+    text-align: center;
+}

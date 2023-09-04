@@ -1,0 +1,34 @@
+.container {
+    position: relative;
+    width: 800px;       /* w800 */
+    height: 400px;      /* h400 */
+    margin: 0 auto;     /* marg0 */
+    border: 10px solid black;
+    overflow: hidden;       /* 컨테이너에 있는 부분만 보이게 하는것 */
+}
+
+.slide {
+    position: absolute;         /* 부모요소로 사용 */
+    width: calc(800px * 3);
+    animation-name: slide;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+.slide img {
+    width: 800px;       /* w800 */
+    height: 400px;      /* h400 */
+    float: left;
+}
+
+@keyframes slide {
+    /* 1) postion: absolute; + left */
+    /* 33.333% { left: 0; }
+    66.666% { left: calc(-800px * 1); }
+    100% { left: calc(-800px * 2); } */
+    
+    /* 2) transform: translasteX() */
+    33.333% { transform: translateX(0); }
+    66.666% { transform: translateX(-800px); }
+    100% { transform: translateX(-800px * 2); }
+}

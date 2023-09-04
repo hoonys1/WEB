@@ -12,28 +12,27 @@
         - loop              : 반복재생
         - preload           : 비디오 파일 미리 다운로드
         - src               : 재생할 비디오 파일 경로
-        - volume            : 재생 볼륨 크기 ( 0.0~1.0 )
+        - volume            : 재생 볼륨 크기 (0.0~1.0)
         - poster            : 썸네일 이미지
         - muted             : 비디오의 오디오 음소거
         - width/height      : 비디오의 가로 세로 사이즈
 
-        - video format(파일포맷)    : mp4, webm, ogg
-        - MIME type (파일형식)      : video/mp4, video/webm, video/ogg
-        -->
-        <video src="video/video.mp4"
-               autoplay controls width="1024" height="768"></video>
-        <hr>
+        - video format(파일포맷)        : mp4, webm, ogg
+        - MIME type(파일형식)           : video/mp4, video/webm, video/ogg
+    -->
+    <video src="video/video.mp4"
+           autoplay controls width="1024" height="768"></video>
+    <hr>
 
-        <video width="1024" height="768">
-            <source src="video/video.mp4" type="video/mp4">
-            <source src="video/video.ogg" type="video/ogg">
-            <source src="video/video.webm" type="video/webm">
-        </video>
-        
-        <hr>
+    <video width="1024" height="768">
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.ogg" type="video/ogg">
+        <source src="video//video.webm" type="video/webm">
+    </video>
 
-        <video src="video/video.mp4"
-               autoplay controls width="1024" height="768"
-               poster="img/poster.png"></video>
+    <hr>
+    <video src="video/video.mp4"
+           autoplay controls width="1024" height="768"
+           poster="img/poster.png"></video>
 </body>
 </html>
