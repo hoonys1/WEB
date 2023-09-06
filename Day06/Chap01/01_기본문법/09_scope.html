@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+    <script>
+        function test() {
+            var local = 10          /* let으로 정하면 if 문 안에서 var를 이용해 중복선언이 불가능하다. */
+
+            if( local > 0 ) {
+                let local =20
+                console.log(`local : ${local}`);
+            }
+            console.log(`local : ${local}`);
+        }
+
+        function test2() {
+            let local2 = 10
+
+            if( local2 > 0 ) {
+                let local2 =20                      /* let은 중복 선언이 불가능 하지만 if문 범위 안에서는(if문만 가능한지는 정확히 모르겠다) 중복선언이 가능하다. */
+                console.log(`local2 : ${local2}`);
+            }
+            console.log(`local2 : ${local2}`);
+        }
+
+        test()
+        test2()
+
+        // console.log(`test3 : ${test3}`)
+        // console.log(`test4 : ${test4}`)
+        // var test3 = 'test'      /* var에서는 변수호출먼저 해고 변수선언을 할수 있다.값은 undefined로 나온다. */
+        // let test4 = 'test'      /* let은 변수호출먼저 하고 변수선언을 할수 없다. */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
