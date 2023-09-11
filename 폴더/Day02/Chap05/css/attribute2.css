@@ -1,36 +1,34 @@
 @charset "UTF-8";
 
-/* TODO: 여기에 작성해보세요 */
 form label {
     display: inline-block;
     width: 100px;
 }
 
-input[type^='t'],
-textarea {
-    bottom: 1px solid #ccc;     /* b1 */
-    padding: 8px;       /* p8 */
-    background-repeat: 5px;     /* br5 */
-    width: 300px;       /* w300 */
+input[type^='t'],textarea {
+    bottom: 1px solid #ccc; /* b1 */
+    padding: 8px;   /* p8 */
+    background-repeat: 5px; /* br5 */
+    width: 300px;
 }
 
 textarea { resize: none; }
 
 label[for^='co'] {
     position: relative;
-    top: -90px;
+    top: -90px; /* t-90 */
 }
 
 input[type^='b'] {
-    padding: 10px 20px;
+    padding: 10px 20px;     /* p10-20 */
     border: 1px solid #bc3636;
     background-color: #bc3636;
     color: white;
-    border-radius: 5px;     /* br5 */
-}   
+    border-radius: 5px;     
+}
 
 /* :active : 마우스를 누르고 있는 상태 */
-input[type^='b']:active {
+input[type^='b']:active{
     border: 1px solid lightpink;
     background-color: lightpink;
 }

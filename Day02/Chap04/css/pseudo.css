@@ -50,7 +50,7 @@ section em:before {
 /* :after
     요소가 끝난 다음 */
 /* TODO: 여기에 작성해보세요 */
-section em:after {
+section em::after {
     content: "\"";
     padding-left: 0.5em;
 }
