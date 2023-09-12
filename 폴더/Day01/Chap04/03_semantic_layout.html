@@ -15,10 +15,12 @@
             background-color: black;
             height: 80px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             float: left;
+            display: block;
             width: 100px;
             height: 100%;
             padding: 10px 20px;
@@ -44,9 +46,15 @@
             min-height: 80px;
         }
 
+        footer .copy {
+            float: left;
+            line-height: 80px;
+            padding: 0px 20px;
+        }
+
         footer .family {
             float: right;
-            line-height: 80;
+            line-height: 80px;
             min-width: 120px;
         }
     </style>
@@ -73,6 +81,10 @@
     </section>
 
     <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 섹션입니다.</p>
+    </section>
+    <footer>
         <p class="copy">Copyright ⓒ ALOHA CLASS.All Rights Reserved</p>
         <p class="family">
             <select name="family">
@@ -81,6 +93,6 @@
                 <option value="3">유튜브</option>
             </select>
         </p>
-    </section>
+    </footer>
 </body>
 </html>

@@ -1,21 +1,21 @@
 .container {
-    width: 960px;       /* w960 */
-    min-height: 400px;
+    width: 960px;   /* w960 */
+    min-height: 400px;  /* mh400 */
     margin: 0 auto;
     border: 3px dashed orange;
 }
 
 li {
-    display: inline;                 /* width, height 적용이 안됨 */
-    /* display: inline-block; */     /* width, height 적용 됨 */
+    display: inline;    /* dii */   /* width, height 적용이 안됨 */
+    /* display: inline-block; */    /* width, height 적용 됨 */
     /* inline       : 크기X, 여백O, 한줄에 나란히 배치 */
     /* block        : 크기O, 여백O, 세로로 쌓여서 배치 */
     /* inline-block : 크기O, 여백O, 한줄에 나란히 배치 */
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    padding: 10px 20px;
-    text-align: center;
+    width: 150px;   /* w150 */
+    height: 50px;   /* h50 */
+    line-height: 50px;  /* lh50px */
+    padding: 10px 20px; /* p10-20 */
+    text-align: center; /* tac */
 }
 
 li:hover {
@@ -30,7 +30,7 @@ li:hover {
 /* grid */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;  /* auto 속성?을 넣어서 하나면 한줄로 두개면 두줄로 세개면 세줄로 나눈다 */
     background-color: royalblue;
     padding: 10px;
 }
@@ -38,10 +38,10 @@ li:hover {
 .item {
     background-color: lightblue;
     border: 1px solid black;
-    padding: 20px;
-    text-align: center;
+    padding: 20px;  /* p20 */
+    text-align: center; /* tac */
 }
-.item img {width: 100%;}
+.item img { width: 100%; }
 
 /* flex */
 .flex-container {

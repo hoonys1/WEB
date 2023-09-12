@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인화면</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- header 메뉴 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="util">
+            <ul class="util-menu">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <div class="menu-left">
+                <a href=""><i class="fa fa-user"></i></a>
+            </div>
+            <div class="menu-center">
+                <nav class="pc">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Board</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-right">
+                <a href=""><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="mobile">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="board.html">Board</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/img01.jpg" alt="이미지1"></div>
+            <div class="swiper-slide"><img src="img/img02.jpg" alt="이미지2"></div>
+            <div class="swiper-slide"><img src="img/img03.jpg" alt="이미지3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    
+    <div class="container">
+        <div class="a">
+            <img src="img/img01.jpg" alt="이미지1" width="320" height="480">
+            <h2>최신 이미지 01</h2>
+            <p>최신 이미지 01 입니다.</p>
+            <p>새로운 게시물을 감상해보세요.</p>
+            <p>2023-09-12</p>
+        </div>
+        <div class="b">
+            <img src="img/img02.jpg" alt="이미지2" width="320" height="480">
+            <h2>최신 이미지 02</h2>
+            <p>최신 이미지 02 입니다.</p>
+            <p>새로운 게시물을 감상해보세요.</p>
+            <p>2023-09-12</p>
+        </div>
+
+        <div class="c">
+            <img src="img/img03.jpg" alt="이미지3" width="320" height="480">
+            <h2>최신 이미지 03</h2>
+            <p>최신 이미지 03 입니다.</p>
+            <p>새로운 게시물을 감상해보세요.</p>
+        </div>
+    </div>
+
+    <!-- footer 영역 -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-menu-container">
+                <ul class="footer-menu">
+                    <li class="footer-list">Board</li>
+                    <li class="footer-list">공지사항</li>
+                    <li class="footer-list">자유 게시판</li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-list">Gallery</li>
+                    <li class="footer-list">갤러리01</li>
+                    <li class="footer-list">갤러리02</li>
+                </ul>
+                <ul class="footer-menu">  <!-- 여기 2로 되어있어서 3으로 바꿨습니다. -->
+                    <li class="footer-list">About</li>
+                    <li class="footer-list">사이트 소개</li>
+                </ul>
+                <ul class="footer-menu">
+                    <select name="family">
+                        <option value="1">네이버</option>
+                        <option value="2">카카오</option>
+                        <option value="3">유튜브</option>
+                    </select>
+                </ul>
+            </div>
+            <p class="family">
+                <p class="copy">Copyright All Rights Reserved.</p>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

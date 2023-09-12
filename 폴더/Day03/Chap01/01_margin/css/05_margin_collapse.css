@@ -1,10 +1,10 @@
 .container {
-    position: relative;
-    width: 1200px; 
-    height: auto;
+    position: relative; /* por */
+    width: 1200px;  /* w1200 */
+    height: auto;   /* ha */
     border: 5px dashed orange;
-    margin: 100px auto /* m100-auto */;
-    text-align: center;
+    margin: 100px auto; /* m100-auto */
+    text-align: center; /* tac */
 }
 
 section {
@@ -15,7 +15,7 @@ section {
     /* border3-solid-gray */
 }
 
-.solve-1 { padding: 50px 0; }
-.solve-2 { border-top: 1px solid hotpink }
+.solve-1 { padding: 50px 0;}
+.solve-2 { border: 1px solid hotpink }
 .solve-3 { margin-top: 0; margin-bottom: 200px; }
 .solve-3:first-of-type { margin-top: 200px; }

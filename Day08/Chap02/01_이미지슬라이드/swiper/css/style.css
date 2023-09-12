@@ -4,4 +4,5 @@
     margin: 50px auto;
 }
 
+/* 이미지를 위에 w960, h480에 맞게 늘려주는?코드 */
 .swiper .swiper-slide img {  width: 100%; height: 100%; }

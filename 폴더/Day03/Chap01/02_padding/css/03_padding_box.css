@@ -1,0 +1,35 @@
+.container {
+    position: relative; /* psr */
+    width: 1200px;  /* w1200 */
+    border: 3px solid orange;
+    text-align: center; /* tac */
+}
+
+.item {
+    width: 100px;   /* w100 */
+    height: 100px;  /* h100 */
+    line-height: 100px; /* lh100px */
+    border: 1px solid gray;
+    background-color: #ddd;
+}
+
+.box1 {
+    padding: 20px;  /* p20 */
+    /* line-height: 100px; */
+    box-sizing: content-box;    /* 기본값 */
+    /* 
+        content-box
+        : 컨텐츠 박스만 박스의 크기로 지정
+    */
+}
+
+.box2 {
+    padding: 20px;  /* p20 */
+    line-height: 60px;  /* lh60px */
+    box-sizing: border-box;
+    /* 
+        border-box
+        : content + padding + border 를 포함하여
+        박스의 크기로 지정
+    */
+}

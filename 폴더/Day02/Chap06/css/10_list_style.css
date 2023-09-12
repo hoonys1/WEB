@@ -1,15 +1,15 @@
 .container {
-    width: 960px;       /* w960 */
-    min-height: 400px;
-    margin: 0 auto;
-    border: 3px dashed orange;
+    width: 960px;   /* w960 */
+    min-height: 400px;  /* mh400 */
+    margin: 0 auto;     /* m0 */
+    border: 3px solid orange;
 }
 
 /* clearfix */
 .container::after {
     content: '';
     display: block;
-    clear: both;        /* 이걸 안하면 곂치게 된다. */
+    clear: both;    /* 이걸 안하면 곂치게 된다. */
 }
 
 .left { float: left; width: 50%; }
@@ -19,18 +19,18 @@
     list-style-type
     : 마커(기호) 유형을 지정하는 속성
 */
-ul.a { list-style-type: circle;         /* lstc */ }
-ul.b { list-style-type: disc;           /* lstd */ }
-ul.c { list-style-type: square;         /* lstc */ }
-ul.none { list-style-type: none;        /* lstn */ }
+ul.a { list-style-type: circle;     /* lstc */}
+ul.b { list-style-type: disc;       /* lstd */}
+ul.c { list-style-type: square;     /* lstc */}
+ul.none { list-style-type: none;    /* lstn */}
 
-ol.a { list-style-type: lower-alpha;    /* lstl */ }
-ol.b { list-style-type: upper-alpha;    /* lstu */ }
-ol.c { list-style-type: lower-roman;    /* lstl */ }
-ol.d { list-style-type: upper-roman;    /* lstu */ }
-ol.e { list-style-type: decimal; }
-ol.f { list-style-type: decimal-leading-zero; }
-ol.none { list-style-type: none; }
+ol.a { list-style-type: lower-alpha;    /* lstl */}
+ol.b { list-style-type: upper-alpha;    /* lstu */}
+ol.c { list-style-type: lower-roman;    /* lstl */}
+ol.d { list-style-type: upper-roman    /* lstu */}
+ol.e { list-style-type: decimal;}
+ol.f { list-style-type: decimal-leading-zero;}
+ol.none { list-style-type: none;}
 
 /* list-style-position */
 .inside, .outside {
@@ -60,8 +60,7 @@ ul.menu2 {
 }
 
 ul.menu li {
-    font-size: 24px;        /* fs24 */
-    line-height: 24px;        /* lh24 */
+    font-style: 24px;   /* fs24 */
+    line-height: 24px;  /* lh24 */
     margin: 30px 8px;
 }
-

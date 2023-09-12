@@ -1,0 +1,42 @@
+.container {
+    position: relative; /* psr */
+    width: 1024px;
+    min-height: 500px;  /* mh500 */
+    border: 1px dashed orange;
+    margin: auto;
+}
+
+.item {
+    width: 300px;   /* w300 */
+    height: 200px;  /* h200 */
+}
+
+.inner::after {
+    display: block;
+    content: '';
+    clear: left;
+    /* clear: right */
+    /* clear: both */
+}
+
+h1 { text-align: center; }
+
+.left {
+    float: left;    /* fll */
+    background-color: pink;
+    height: 600px;  /* h600 */
+    border: 3px solid red;
+}
+
+.right {
+    float: right;   /* flr */
+    background-color: lightblue;
+    height: 400px;  /* h400 */
+    border: 3px solid black;
+}
+
+.next {
+    width: 100%;    /* w100% */
+    background-color: cornflowerblue;
+    border: 3px solid yellow;
+}
