@@ -63,9 +63,9 @@
 /* stretch 로 하려면 width/height 가 고정값을 가지고 있으면 적용이 안된다. */
 .content-stretch .item { height: auto; }
 
-.content-center { align-content: center; }
 .content-start { align-content: flex-start; }
 .content-end { align-content: flex-end; }
+.content-center { align-content: center; }
 .content-between { align-content: space-between; }
 .content-around { align-content: space-around; }
 

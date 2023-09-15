@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    border: 3px dashed orange;
+    box-sizing: border-box;
+}
+
+.inner { text-align: center; }
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.item {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.absolute {
+    position: absolute;
+    background-color: white;
+    border: 2px dashed gray;
+    top: 30px;
+    left: 75px;
+    z-index: -1;
+}
+
+/* 
+    scale(배율)
+    0.0~1.0 : 배율의 크기만큼 축소
+    1.0~x.0 : 배율의 크기만큼 확대
+*/
+
+.scale1:hover { transform: scale(2); }
+.scale2:hover { transform: scaleX(2); }
+.scale3:hover { transform: scaleY(2); }
+
+.img-box {
+    width: 100%;
+    height: 160px;
+    border: 3px solid blue;
+    overflow: hidden;       /* 사진을 저 박스 사이즈만큼만 나오게 하고 나머지는 숨긴다. */
+}
+
+.img-box img {
+    width: 100%;
+    transition: all 0.5s;   /* 마우스 떼면 천천히 작아지는 애니메이션 만들기 */
+}
+
+.img-box img:hover {
+    transform: scale(1.2);
+    cursor: pointer;        /* 손가락 모양으로 마우스 만들기 */
+    transition: all 0.5s;   /* 마우스 올려두면 천천히 커지는 애니메이션 만들기 */
+}
